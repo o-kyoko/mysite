@@ -67,18 +67,21 @@ a {
   display: flex;
   right: 0;
   bottom: 0;
-  position: relative;
 }
 .global-nav-list li{
+  position: relative;
+  border-left:1px solid #666;
   width:190px;
   text-align:center;
+}
+.global-nav-list li:hover{
+  visibility: visible;
 }
 .global-nav-list li a {
   color: #3a3838;
   padding: 0 30px 2px 30px;
-  position: relative;
+  justify-content: center;
   display:block;
-  z-index:100;
 }
 .global-nav-list li a::after {
   position: absolute;
@@ -94,14 +97,16 @@ a {
 .global-nav-list li a:hover:after {
   transform: scaleX(1);
 }
-.nav-sub{
-  top:0;
+.nav-drop{
+  position: relative;
+}
+.nav-drop-list{
+  left:0;
   position: absolute;
   visibility: hidden;
-  opacity: 0;
   transition:.2s ease-out;
-  width:0;
-  height:0;
+  width:max-content;
+  z-index: 1;
 }
 ul .nav-child{
   position: absolute;
