@@ -66,17 +66,18 @@ a {
 .global-nav-list {
   display: flex;
   right: 0;
-  left: 40px;
   bottom: 0;
+  position: relative;
 }
 .global-nav-list li{
-  position: relative;
   width:190px;
 }
 .global-nav-list li a {
   color: #3a3838;
   padding: 0 30px 2px 30px;
   position: relative;
+  display:block;
+  z-index:100;
 }
 .global-nav-list li a::after {
   position: absolute;
@@ -101,8 +102,10 @@ a {
   width:0;
   height:0;
 }
-.nav-child{
-  
+ul .nav-child{
+  position: absolute;
+  top:29px;
+  z-index:10;
 }
 /* Fixed */
 .fixed {
