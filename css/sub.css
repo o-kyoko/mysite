@@ -71,6 +71,7 @@ a {
 }
 .global-nav-list li{
   width:190px;
+  text-align:center;
 }
 .global-nav-list li a {
   color: #3a3838;
