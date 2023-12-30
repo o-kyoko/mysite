@@ -69,6 +69,10 @@ a {
   left: 40px;
   bottom: 0;
 }
+.global-nav-list li{
+  position: relative;
+  width:190px;
+}
 .global-nav-list li a {
   color: #3a3838;
   padding: 0 30px 2px 30px;
@@ -88,7 +92,7 @@ a {
 .global-nav-list li a:hover:after {
   transform: scaleX(1);
 }
-.submenu{
+.nav-sub{
   top:0;
   position: absolute;
   visibility: hidden;
@@ -96,6 +100,9 @@ a {
   transition:.2s ease-out;
   width:0;
   height:0;
+}
+.nav-child{
+  
 }
 /* Fixed */
 .fixed {
