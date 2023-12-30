@@ -71,7 +71,7 @@ a {
 .global-nav-list-item{
   position: relative;
   border-left:1px solid #666;
-  width:190px;
+  width:150px;
   text-align:center;
 }
 .global-nav-list-item:hover{
