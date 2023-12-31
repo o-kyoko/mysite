@@ -128,10 +128,6 @@ a {
   font-size: 24px;
   color: #333;
 }
-.fixed .global-nav-list{
-  top:0;
-  left:0;
-}
 .fixed .global-nav ul li a {
   color: #333;
   padding: 0 20px;
