@@ -75,7 +75,9 @@ a {
   height:inherit;
   text-align:center;
 }
-.global-nav-list-item:hover .nav-drop-list{
+.global-nav-list-item:hover .nav-drop-list,
+.nav-child:hover .nav-child-list{
+  opacity: 1;
   visibility: visible;
 }
 .global-nav-list-item a {
@@ -97,7 +99,7 @@ a {
 .global-nav-list-item a:hover:after {
   transform: scaleX(1);
 }
-.nav-drop{
+.nav-drop, .nav-child{
   position: relative;
 }
 .nav-drop-list{
