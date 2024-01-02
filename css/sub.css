@@ -101,7 +101,7 @@ a {
   transform: scaleX(1);
 }
 .nav-drop, .nav-child{
-  position: relative;
+  position: relative; /*  ul drop用のrelative  */
 }
 .nav-drop-list{   /*  子  */
   left:0;
@@ -115,6 +115,9 @@ a {
 }
 .nav-drop-list:hover{
   opacity:1;
+}
+.nav-drop-list li{
+  border:1px solid #fff;
 }
 .nav-child-list{   /*  孫  */
   left: 100%;
