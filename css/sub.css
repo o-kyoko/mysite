@@ -71,10 +71,13 @@ a {
 }
 .global-nav-list-item{
   position: relative;
-  border-left:1px solid #666;
+  border-left:1px solid #666; /*  左に区切り線  */
   width:150px;
   height:100%; /*  ulの高さ継承  */
   text-align:center;
+}
+.global-nav-list-item:last-child{
+  border-right:1px solid #666; /*  右に区切り線  */
 }
 .global-nav-list-item:hover .nav-drop-list,
 .nav-child:hover .nav-child-list{
@@ -151,7 +154,7 @@ a {
 }
 .fixed .global-nav ul li a {
   color: #333;
-  padding: 0 20px;
+
 }
 
 /* Toggle Button */
