@@ -66,13 +66,13 @@ a {
 
 .global-nav-list {
   display: flex;
-  align-items:baseline;
+  height:40px;
 }
 .global-nav-list-item{
   position: relative;
   border-left:1px solid #666;
   width:150px;
-  height:inherit;
+  height:100%; /*  ulの高さ継承  */
   text-align:center;
 }
 .global-nav-list-item:hover .nav-drop-list,
@@ -81,9 +81,10 @@ a {
   visibility: visible;
 }
 .global-nav-list-item a {
+  background-color:#ddd;
   color: #3a3838;
-  justify-content: center;
   display:block;
+  padding:8px 0;
 }
 .global-nav-list-item a::after {
   position: absolute;
@@ -105,7 +106,7 @@ a {
 .nav-drop-list{   /*  子  */
   left:0;
   position: absolute;
-  background-color: #a3a1a1; 
+  background-color: #afadad; 
   top: 100%;
   transition: opacity 3s, visibility .3s; 
   visibility: hidden; 
