@@ -210,7 +210,7 @@ a {
     color: #333;
     background: transparent;
   }
-  #mobile-head {
+  #mobile-head { /* sp時のheader */
     width: 100%;
     height: 56px;
     z-index: 999;
@@ -219,11 +219,10 @@ a {
   .global-nav {
     position: absolute;
     /* 開いてないときは画面外に配置 */
-    top: -500px;
+    top: -502px;
     background: #333;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
     transition: 0.5s ease-in-out;
   }
   .global-nav-list {
