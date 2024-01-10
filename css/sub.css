@@ -217,10 +217,11 @@ a {
     text-align: center;
     transition: 0.5s ease-in-out;
   }
-  .global-nav-list {
+  ul.global-nav-list {
     position: static;
     flex-direction: column;
     padding: 0;
+    align-items: center;
   }
   .global-nav-list li {
     position: static;
