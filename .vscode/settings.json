@@ -1,0 +1,6 @@
+{
+    "editor.rename.enablePreview": true,
+    "editor.wordWrap": "on",
+    "editor.hover.enabled": "off",
+    "editor.minimap.enabled": false
+}
