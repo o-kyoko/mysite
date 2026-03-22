@@ -1,11 +1,13 @@
 //  swiper js //
 document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
-loop: true,
-  speed:2000,//スライドが切り替わるのにかかる時間msec
-  autoplay:{
-  delay: 2000,
-  disableOnInteraction: false,
+ 
+   autoplay: {
+    delay: 0,   
+    disableOnInteraction: false, // デフォルト: true
+    pauseOnMouseEnter: false,    // デフォルト: true
+    waitForTransition: true,     // デフォルト: true
+    stopOnLastSlide: false,      // デフォルト: false
   },
   pagination: {
     el: '.swiper-pagination',
