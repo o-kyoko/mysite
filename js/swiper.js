@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
       // 基本的な設定
       loop: true,
+      speed: 2000,
       slidesPerView: 3,
       autoplay: {
       delay: 3000, // スライドが切り替わるまでの表示時間(ミリ秒)
