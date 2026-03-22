@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
       // 基本的な設定
       loop: true,
       speed: 2000,
-      slidesPerView: 3,
       autoplay: {
       delay: 3000, // スライドが切り替わるまでの表示時間(ミリ秒)
       stopOnLast: false, // 最後のスライドまで表示されたら自動再生を中止するか
