@@ -14,23 +14,7 @@ window.addEventListener('DOMContentLoaded', function() {
        $header.toggleClass('open');
     });
   });
-const myswiper = new Swiper('.swiper', {
- loop: true,
- centeredSlides : true,
- autoplay: { 
- delay: 3000,
- disableOnInteraction: false,
- },
- pagination: { 
- el: '.swiper-pagination',
- clickable: true,
- type: 'bullets',
- }, 
- navigation: {
- nextEl:'.swiper-button-next',
- prevEl:'.swiper-button-prev',
- }    
-});
+
 
 
 window.addEventListener('scroll', function(){
