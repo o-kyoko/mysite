@@ -15,24 +15,14 @@ window.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-
+const items = document.querySelectorAll('.fusion-inner-box');
 
 window.addEventListener('scroll', function(){
-    const item = document.querySelectorAll('.fusion-inner-box');
-  
-    //querySelectorAll('.item')は配列になるので、for構文で取得
-    //配列は0から始まるのでi = 0
-    //i < item.lengthで配列の要素よりも数が小さい時　i++(インクリメント)1つずつ増加
-    for(let i = 0; i < item.length; i++){
-  
-      //.itemのオフセットの高さを取得
-      var targetTop = item[i].offsetTop;
-  
-      //画面のスクロール量 + 300px > .itemのオフセットの高さを取得
-      if(window.scrollY + 300 > targetTop){
-      
-        //itemにクラスshowを追加
-        item[i].classList.add('show');
-      }
+  items.forEach(function(item){
+    const rect = item.getBoundingClientRect();
+
+    if(rect.top < window.innerHeight - 100){
+      item.classList.add('show');
     }
   });
+});
