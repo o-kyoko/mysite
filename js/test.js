@@ -1,8 +1,8 @@
 
- $(function() {
+window.addEventListener('DOMContentLoaded', function() {
     var $header = $('#top-head');
     // Nav Fixed
-    $(window).scroll(function() {
+   window.addEventListener('scroll',function() {
      if ($(window).scrollTop() > 350) {
         $header.addClass('fixed');
       } else {
@@ -14,28 +14,26 @@
        $header.toggleClass('open');
     });
   });
-  console.log("www");
-$(function() {
-    var $header = $('.header');
-        // Nav Fixed
-        $(window).scroll(function() {
-            if ($(window).scrollTop() > 350) {
-                $header.addClass('fixed');
-            } else {
-                $header.removeClass('fixed');
-            }
-        });
-        // Nav Toggle Button
-        
- });
+const myswiper = new Swiper('.swiper', {
+ loop: true,
+ centeredSlides : true,
+ autoplay: { 
+ delay: 3000,
+ disableOnInteraction: false,
+ },
+ pagination: { 
+ el: '.swiper-pagination',
+ clickable: true,
+ type: 'bullets',
+ }, 
+ navigation: {
+ nextEl:'.swiper-button-next',
+ prevEl:'.swiper-button-prev',
+ }    
+});
 
-$('.toggle').click(function(){
-    (this).toggleClass('open');
- });
 
 window.addEventListener('scroll', function(){
-
-    //すべての.itemを取得
     const item = document.querySelectorAll('.fusion-inner-box');
   
     //querySelectorAll('.item')は配列になるので、for構文で取得
@@ -54,4 +52,3 @@ window.addEventListener('scroll', function(){
       }
     }
   });
-  
