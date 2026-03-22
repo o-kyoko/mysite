@@ -2,9 +2,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
    loop: true,
+   centeredSliders: true,
    speed: 3000,
    autoplay: {
-    delay: 1,   
+    delay: 3000,   
     disableOnInteraction: false, // デフォルト: true
     pauseOnMouseEnter: false,    // デフォルト: true
     waitForTransition: true,     // デフォルト: true
@@ -12,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
+    type: '.bullet',
  },
 
   //(3)ナビゲーションボタンを表示する時追加
