@@ -23,6 +23,8 @@ window.addEventListener('scroll', function(){
 
     if(rect.top < window.innerHeight - 100){
       item.classList.add('show');
+    } else {
+      item.classList.remove('show');
     }
   });
 });
