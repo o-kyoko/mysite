@@ -21,7 +21,7 @@ window.addEventListener('scroll', function(){
   items.forEach(function(item){
     const rect = item.getBoundingClientRect();
 
-    if(rect.top < window.innerHeight - 100){
+    if(rect.top < window.innerHeight - 50){
       item.classList.add('show');
     } else {
       item.classList.remove('show');
