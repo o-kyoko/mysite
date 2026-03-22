@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 loop: true,
   speed:2000,//スライドが切り替わるのにかかる時間msec
   autoplay:{
-  delay: 2000//次のスライドに切り替わるまでの時間msec
+  delay: 2000,
+  disableOnInteraction: false,
   },
   pagination: {
     el: '.swiper-pagination',
