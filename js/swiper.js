@@ -1,9 +1,10 @@
 //  swiper js //
 document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
- 
+   loop: true,
+   speed: 3000,
    autoplay: {
-    delay: 0,   
+    delay: 1,   
     disableOnInteraction: false, // デフォルト: true
     pauseOnMouseEnter: false,    // デフォルト: true
     waitForTransition: true,     // デフォルト: true
