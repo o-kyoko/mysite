@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
  const myswiper = new Swiper('.swiper', {
    loop: true,
    centeredSlides : true,
+   speed: 1000,
    autoplay: { 
    delay: 3000,
    disableOnInteraction: false,
