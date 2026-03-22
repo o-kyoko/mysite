@@ -1,7 +1,6 @@
 //  swiper js //
 document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
-      // 基本的な設定
       loop: true,
       speed: 2000,
       autoplay: {
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       navigation: {
         nextEl: '.swiper-button-next', // 次へボタン
         prevEl: '.swiper-button-prev', // 前へボタン
-      },
+      }
       
     });
   });
